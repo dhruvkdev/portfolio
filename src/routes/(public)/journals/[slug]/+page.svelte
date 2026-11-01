@@ -22,7 +22,7 @@
 		<div class="journal-label">JOURNAL</div>
 		<h1 class="entry-title">{data.journal.title}</h1>
 		<div class="entry-metadata">
-			<time datetime={data.journal.publishedAt || data.journal.createdAt}>
+			<time datetime={String(data.journal.publishedAt || data.journal.createdAt)}>
 				{formatDate(data.journal.publishedAt || data.journal.createdAt)}
 			</time>
 			{#if data.journal.tags && data.journal.tags.length > 0}

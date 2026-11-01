@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode (default) */
+  :root {
+    --color-background: #F3EFE7;
+    --color-primary: #171717;
+    --color-accent: #A94F35;
+    --color-secondary: #68645D;
+    --color-rules: #292722;
+  }
+
+  /* Dark mode */
+  .dark {
+    --color-background: #181715;
+    --color-primary: #E6E0D5;
+    --color-accent: #B85F43;
+    --color-secondary: #A09A90;
+    --color-rules: #756F66;
+  }
+}
+
+/* Apply colors with smooth transitions */
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}

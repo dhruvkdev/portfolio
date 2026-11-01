@@ -98,12 +98,6 @@
           Journals
         </a>
         <a 
-          href="/journey" 
-          class="text-(--color-secondary) hover:text-(--color-primary) transition-colors"
-        >
-          Journey
-        </a>
-        <a 
           href="/projects" 
           class="text-(--color-secondary) hover:text-(--color-primary) transition-colors"
         >

@@ -392,10 +392,6 @@
 			gap: 20px;
 		}
 
-		.filters {
-			flex-wrap: wrap;
-		}
-
 		.entry {
 			grid-template-columns: 65px minmax(0, 1fr);
 		}
